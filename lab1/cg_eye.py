@@ -11,5 +11,5 @@ mask2=np.equal(img,0) # ตาดำใน
 mask3=np.equal(img,245) #ตาขาว
 #combine mask
 mask_c= (mask & (mask1 | mask2 |mask3))
-plt.imshow(mask_c,cmap='gray')
+plt.imshow((mask1 | mask2 |mask3),cmap='gray')
 plt.show()
