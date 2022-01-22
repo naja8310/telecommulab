@@ -11,7 +11,7 @@ size_img = (os.path.getsize('D:\Lab\Telecommunication Lab\lab2\self.bmp')/1000)
 size_result = (os.path.getsize('D:\Lab\Telecommunication Lab\lab2\MyCompressedFace.jpeg')/1000)
 h1, w1 = img.shape
 h2, w2 = result.shape
-img_title = ('Default Image With Size = {} kB Height = {} px and Width = {} px '.format(size_img,h1,w1))
+img_title = ('Original Image With Size = {} kB Height = {} px and Width = {} px '.format(size_img,h1,w1))
 compressed_title = ('Compressed Image With Size = {} kB Height = {} px and Width = {} px '.format(size_result,h2,w2))
 #display
 plt.subplot(1,2,1) # 1 row 2 colum img 1
@@ -20,5 +20,5 @@ plt.title(img_title)
 plt.subplot(1,2,2) # 1 row 2 colum img 2
 plt.imshow(result,cmap='gray')
 plt.title(compressed_title)
-plt.suptitle("Settasak Images")
+plt.suptitle('Settasak Images')
 plt.show()
