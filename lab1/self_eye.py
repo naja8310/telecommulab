@@ -12,5 +12,5 @@ mask3 = cv2.inRange(img,0,60)
 mask4 = cv2.inRange(img,150,200)
 #combine mask
 mask5 = ((mask1|mask2) & (mask3|mask4))
-plt.imshow(mask3,cmap='gray')
+plt.imshow(mask5,cmap='gray')
 plt.show()
