@@ -1,7 +1,7 @@
 import cv2 as cv   
 import numpy as np  
 from matplotlib import pyplot as plt   
-img = cv.imread(r'D:\Lab\Telecommunication Lab\lab4\MyFacePic3.jpg',0) 
+img = cv.imread(r'D:\Lab\Telecommunication Lab\lab4\MyFacePic3_2.jpg',0) 
 ret1,th1 = cv.threshold(img,254,255,cv.THRESH_BINARY) 
 ret2,th2 = cv.threshold(img,0,255,cv.THRESH_BINARY+cv.THRESH_OTSU) 
 blur = cv.GaussianBlur(img,(5,5),0) 
