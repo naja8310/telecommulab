@@ -1,8 +1,14 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-#26 254
 img = cv2.imread(r'D:\Lab\Telecommunication Lab\lab4\MyFacePicSVRC.jpg',0)
-mask = cv2.inRange(img,26,254)
-np.bitwise_not(mask,img)
-plt.imshow()
+blur = cv2.GaussianBlur(img,(5,5),0) 
+mask = cv2.inRange(blur,160,205)
+ret,th = cv2.threshold(mask,0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
+plt.subplot(121)
+plt.imshow(img,cmap='gray')
+plt.title('Original Image')
+plt.subplot(122)
+plt.imshow(th,cmap='gray')
+plt.title("Otsu's Thresholding")
+plt.show()
