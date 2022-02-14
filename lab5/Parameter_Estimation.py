@@ -40,8 +40,8 @@ plt.figure(2)
 plt.hist(img.ravel(),256,[0,256])
 plt.ylabel('Number of pixel')
 plt.xlabel('Intensity Value')
-#plt.plot([0,0],[0,2000],'-k')
-#plt.plot([145,145],[0,2000],'-k')
+plt.plot([113,113],[0,2000],'-k')
+plt.plot([146,146],[0,2000],'-k')
 plt.title("Histogram")
 plt.show()
 
@@ -127,13 +127,13 @@ plt.plot(xl, p1_est + p2_est+p3_est, 'r--', linewidth=2.0) # แก้ตาม 
 plt.plot(xl, p1_est, 'b-.', linewidth=2.0);
 plt.plot(xl, p2_est, 'g-.', linewidth=2.0);
 plt.plot(xl, p3_est, 'm-.', linewidth=2.0);
-#plt.plot([0,0],[0,0.014],'-k')
-#plt.plot([145,145],[0,0.014],'-k')
+plt.plot([113,113],[0,0.014],'-k')
+plt.plot([146,146],[0,0.014],'-k')
 plt.xlabel('Grayscale Value')
 plt.ylabel('Probability')
 plt.legend(('Gaussian Mixture','W1','W2','W3'), loc = 'upper left')
 plt.title('Gaussian Distribution')
 plt.figure(5)
-plt.imshow(arr,cmap='gray',vmin=0,vmax=145)
-plt.title('Face and Body')
+plt.imshow(arr,cmap='gray',vmin=113,vmax=146)
+plt.title('Face Segment')
 plt.show()

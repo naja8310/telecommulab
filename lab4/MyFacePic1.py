@@ -19,3 +19,4 @@ for i in range(3):
     plt.title('BW histrogram'),plt.ylabel('Number of pixel'),plt.xlabel('intensity value') 
 plt.subplots_adjust(hspace=0.4)
 plt.show()
+#

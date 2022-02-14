@@ -40,8 +40,8 @@ plt.figure(2)
 plt.hist(img.ravel(),256,[0,256])
 plt.ylabel('Number of pixel')
 plt.xlabel('Intensity Value')
-plt.plot([225,225],[0,4000],'-k')
-plt.plot([255,255],[0,4000],'-k')
+plt.plot([40,40],[0,4000],'-k')
+plt.plot([90,90],[0,4000],'-k')
 plt.title("Histogram")
 plt.show()
 
@@ -131,13 +131,13 @@ plt.plot(xl, p1_est, 'b-.', linewidth=2.0);
 plt.plot(xl, p2_est, 'g-.', linewidth=2.0);
 plt.plot(xl, p3_est, 'm-.', linewidth=2.0);
 plt.plot(xl, p4_est, 'k-.', linewidth=2.0);
-plt.plot([225,225],[0,0.017],'-k')
-plt.plot([255,255],[0,0.017],'-k')
+plt.plot([40,40],[0,0.017],'-k')
+plt.plot([90,90],[0,0.017],'-k')
 plt.xlabel('Grayscale Value')
 plt.ylabel('Probability')
 plt.legend(('Gaussian Mixture','W1','W2','W3','W4'), loc = 'upper left')
 plt.title('Gaussian Distribution')
 plt.figure(5)  
-plt.imshow(arr,cmap='gray',vmin=225,vmax=255)
-plt.title('Bone Cut')
+plt.imshow(arr,cmap='gray',vmin=40,vmax=90)
+plt.title('Lung Cut')
 plt.show()
