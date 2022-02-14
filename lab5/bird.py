@@ -137,3 +137,4 @@ plt.figure(5)
 plt.imshow(arr,cmap='gray',vmin=20,vmax=100)
 plt.title('Bird Cut')
 plt.show()
+#
